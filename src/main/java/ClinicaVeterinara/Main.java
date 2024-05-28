@@ -85,5 +85,7 @@ public class Main {
        Factura factura1 = new Factura(1,client1,consultatii,medicamente, totalCostMedicamente);
        factura1.afiseazaDetalii();
 
+
+
     }
 }
