@@ -26,4 +26,6 @@ public class ConsultatieService {
             System.out.println(consultatie);
         }
     }
+
+
 }

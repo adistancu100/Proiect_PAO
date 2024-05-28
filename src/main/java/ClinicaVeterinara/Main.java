@@ -8,12 +8,10 @@ import ClinicaVeterinara.ConsultatiiVeterinare.ConsultatieVeterinara;
 import ClinicaVeterinara.Facturi.Factura;
 import ClinicaVeterinara.Medicamente.Medicament;
 import ClinicaVeterinara.Reteta.Reteta;
+import ClinicaVeterinara.Serviciu.ConsultatieService;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -85,6 +83,15 @@ public class Main {
        Factura factura1 = new Factura(1,client1,consultatii,medicamente, totalCostMedicamente);
        factura1.afiseazaDetalii();
 
+        System.out.println();
+
+
+        ConsultatieService consultatieService = new ConsultatieService();
+        consultatieService.adaugaConsultatie(cons1);
+        consultatieService.adaugaConsultatie(cons2);
+        consultatieService.afisareConsultatii();
+
+        System.out.println();
 
 
     }
